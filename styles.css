@@ -1,0 +1,314 @@
+/* Cat website */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: helvetica, sans-serif;
+	font-weight: bold;
+	margin: 0;
+	padding: 0.5em;
+	background: black;
+	color: #282828;
+	font-size: 22px;
+}
+
+main {
+	max-width: 35em;
+	margin: 5em auto;
+	padding: 0 0.5em;
+	perspective: 20em;
+}
+
+h1 {
+	font-size: 2em;
+	margin: 0 0 1rem 0;
+	padding: 0;
+	color: white;
+	text-align: center;
+}
+
+h2 {
+	font-size: 1em;
+	color: white;
+	margin: 0 0 1rem 0;
+	padding: 0;
+	color: white;
+	text-align: center;
+}
+
+
+p {
+	margin: 0 0 1rem 0;
+    word-break: break-word;
+   color: red;
+    font-family: helvetica, sans-serif;
+    font-weight: bold;
+    position: fixed;
+    font-size: 2em;
+}
+
+.page2 {
+	background-color: red;
+}
+
+.page2:active {
+	color: transparent;
+	background-color: #eaeaea;
+}
+
+.page2:active * {
+	color: transparent;
+	background-color: transparent;
+}
+
+.page2:active p {
+	color: red;
+}
+
+.nav2 {
+	background: #ed5810; 
+}
+
+.page3 {
+	background-color: #21213b;
+}
+
+.nav3 {
+	background: #373766; 
+}
+
+.me {
+	position: fixed;
+	margin-left: 170px;
+	opacity: 2;
+}
+
+.me:hover {
+	opacity: 0;
+	transition: all 1s;
+	cursor: wait;
+}
+
+.me2 {
+	position: fixed;
+	margin-left: 170px;
+	z-index: -2;
+	filter: blur(0.7px);
+}
+.me3 {
+	position: fixed;
+	margin-left: 170px;
+	z-index: -3;
+	filter: blur(0.7px);
+}
+.page3:active .me2 {
+	opacity: 0;
+	transition: all 1s;
+}
+
+.box {
+	font-size: 2em;
+	color: black;
+	position: fixed;
+	border: 5px solid white;
+	padding: 8px;
+}
+
+.box:hover {
+	color: white;
+	transition: all 1s;
+	cursor: pointer;
+	border: 3px dotted gray;
+	background-color: #393939;
+}
+
+.box2 {
+    font-size: 2em;
+    color: black;
+    position: absolute;
+    left: 50%;
+    top: 5em;
+    border: 5px solid white;
+	padding: 8px;
+}
+
+.box2:hover {
+	color: white;
+	transition: all 1s;
+	cursor: pointer;
+	border: 3px dashed gray;
+	background-color: #393939;
+}
+
+.box3 {
+    font-size: 2em;
+    color: black;
+    position: absolute;
+    left: 20%;
+    top: 7em;
+    border: 5px solid white;
+	padding: 8px;
+}
+
+.box3:hover {
+	color: white;
+	transition: all 1s;
+	cursor: pointer;
+	border: 6px double gray;
+	background-color: #393939;
+}
+
+.box4 {
+    font-size: 2em;
+    color: black;
+    position: absolute;
+    left: 72%;
+    top: 9em;
+    border: 5px solid white;
+	padding: 8px;
+}
+
+.box4:hover {
+	color: white;
+	transition: all 1s;
+	cursor: pointer;
+	border: none;
+	background-color: #393939;
+}
+
+.me3 {
+	position: fixed;
+	margin-left: 170px;
+	z-index: -3
+}
+
+.bye {
+	border-bottom: 4px white solid;
+	border-top: 4px white solid;
+	width: 
+}
+
+.bye:hover {
+	opacity: 0;
+	transition: all 2s;
+	cursor: wait;
+}
+
+.button {
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    color: white;
+    display: table;
+    margin: 2.5em 0;
+    transition: all 0.25s;
+    position: relative;
+    left: 42%;
+    transform: translate(0);
+}
+
+.button:hover {
+	color: blue;
+    text-decoration: underline;
+    transform: translateY(-10px);
+    font-size: 26px;
+
+}
+
+
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 9%;
+	height: 100%;
+	background: #393939;
+	padding: 0.5em;
+	z-index: 2;
+	box-shadow: 0 0 2px 0 #282828;
+	display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+nav a {
+    margin: 0.5em;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s;
+
+}
+
+nav a:hover {
+    color: #4cdcd6;
+    filter: none;
+    font-style: italic;
+}
+
+
+.active {
+	text-decoration: underline;
+	color: #4cdcd6;
+	filter: none;
+	font-style: italic;
+}
+
+.title {
+	position: absolute;
+    left: 40%;
+    bottom: -7em;
+    cursor: pointer;
+}
+
+.title0 {
+	position: absolute;
+    left: 40%;
+    bottom: -16.5em;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 20px;
+    cursor: pointer;
+    padding-left: 4em;
+}
+
+.title2 {
+	position: absolute;
+    left: 40%;
+    bottom: -8em;
+    font-weight: 100;
+    font-style: italic;
+    cursor: pointer;
+}
+
+
+.title3 {
+	position: absolute;
+    left: -8%;
+    bottom: 1em;
+    font-weight: 100;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.title4 {
+	position: absolute;
+    left: 102%;
+    bottom: -10em;
+    font-weight: 100;
+    font-style: italic;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.title5 {
+	position: absolute;
+    left: 60%;
+    bottom: -28em;
+    font-weight: 100;
+    font-style: italic;
+    cursor: pointer;
+}
+
+
